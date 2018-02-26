@@ -154,6 +154,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
 
+# Charger
+include device/xiaomi/rolex/rootdir/charger/charger.mk
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8937 \
