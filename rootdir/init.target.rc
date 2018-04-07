@@ -76,7 +76,16 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     #Start the following services needed for fftm
     start surfaceflinger
     start qcom-usb-sh
-	
+
+# redefine cameraserver to load shim
+service cameraserver /system/bin/cameraserver
+    class main
+    user cameraserver
+    group audio camera input drmrpc
+    ioprio rt 4
+    setenv LD_PRELOAD "libshim_cameraservice.so"
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
+
 #Start up peripheral manager
 service per_mgr /vendor/bin/pm-service
     class core
