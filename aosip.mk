@@ -14,12 +14,16 @@
 # limitations under the License.
 #
 
+# Maintainer Prop
+PRODUCT_BUILD_PROP_OVERRIDES += \
+DEVICE_MAINTAINERS="Anirudh Gupta"
+
 $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_rolex
+PRODUCT_NAME := aosip_rolex
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
