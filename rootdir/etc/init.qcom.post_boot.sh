@@ -334,9 +334,6 @@ function enable_memory_features()
         setprop ro.vendor.qti.sys.fw.bservice_enable true
         setprop ro.vendor.qti.sys.fw.bservice_limit 5
         setprop ro.vendor.qti.sys.fw.bservice_age 5000
-
-        #Enable Delay Service Restart
-        setprop ro.vendor.qti.am.reschedule_service true
     fi
 }
 
