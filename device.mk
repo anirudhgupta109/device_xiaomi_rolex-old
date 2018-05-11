@@ -430,4 +430,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Common Android Go configurations
+ifeq ($(AOSIP_BUILDTYPE), Go)
 $(call inherit-product, build/target/product/go_defaults.mk)
+endif
