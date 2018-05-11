@@ -405,7 +405,7 @@ PRODUCT_PACKAGES += \
 # Whitelisted app
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
- 
+
 # Wifi
 PRODUCT_PACKAGES += \
     libcld80211 \
@@ -428,3 +428,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini
+
+# Common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
