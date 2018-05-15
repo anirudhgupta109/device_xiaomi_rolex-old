@@ -1,10 +1,17 @@
 [
  {
-   "repository": "android_device_qcom_common",
-   "target_path": "device/qcom/common"
+   "repository": "anirudhgupta109/kernel_xiaomi_rolex",
+   "target_path": "kernel/xiaomi/msm8917"
+   "branch": "aosip"
  },
  {
-   "repository": "android_kernel_xiaomi_msm8917",
-   "target_path": "kernel/xiaomi/msm8917"
+   "repository": "anirudhgupta109/vendor_xiaomi_rolex",
+   "target_path": "vendor/xiaomi"
+   "branch": "aosip"
+ },
+ {
+   "repository": "anirudhgupta109/gcc-prebuilts"
+   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-7.2"
+   "branch" : "master"
  }
 ]
