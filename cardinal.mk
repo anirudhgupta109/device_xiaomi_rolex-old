@@ -15,15 +15,15 @@
 #
 
 # Maintainer Prop
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Anirudh Gupta"
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.cardinal.maintainer="Anirudh Gupta"
 
 $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Cardinal stuff.
+$(call inherit-product, vendor/cardinal/common.mk)
 
-PRODUCT_NAME := aosip_rolex
+PRODUCT_NAME := cardinal_rolex
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
