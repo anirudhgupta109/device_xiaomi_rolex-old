@@ -189,13 +189,16 @@ BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
 
 # Tap2Wake
-TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
+
+# exFAT
+TARGET_EXFAT_DRIVER := exfat
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
